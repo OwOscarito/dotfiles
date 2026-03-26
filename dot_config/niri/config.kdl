@@ -1,0 +1,43 @@
+// Niri configuration for CachyOS
+// For documentation and full reference, see: https://github.com/YaLTeR/niri/wiki
+
+include "colors.kdl"
+include "keybinds.kdl"
+include "looks.kdl"
+include "outputs.kdl"
+include "rules.kdl"
+
+// ────────────── Input Configuration ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Input
+
+input {
+    keyboard {
+        xkb {
+            layout "latam"
+        }
+    }
+
+    touchpad {
+        tap // Enable tap-to-click
+        natural-scroll // Enable natural (macOS-style) scrolling
+    }
+
+    focus-follows-mouse // Automatically focus windows under the mouse pointer
+    workspace-auto-back-and-forth // Enable workspace back & forth switching
+
+    disable-power-key-handling
+}
+
+// ────────────── Miscellaneous Config ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
+
+prefer-no-csd // Disable program decorations
+screenshot-path "~/Pictures/Screenshots/.last-screenshot"
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+debug {
+    honor-xdg-activation-with-invalid-serial
+}
