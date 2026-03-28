@@ -9,12 +9,20 @@ output "eDP-1" {
     position x=1920 y=1080
 }
 
+// Casa
+output "Lenovo Group Limited G24-20 U53390CD" {
+    mode "1920x1080@120.000"
+    scale 1
+    position x=1920 y=0
+}
+output "LG Electronics LG FULL HD 0x01010101" {
+    mode "1920x1080@60"
+    scale 1
+    position x=0 y=0
+}
+
+// Midify
 output "Samsung Electric Company LS24D300G H1AK500000" {
     scale 1
     position x=0 y=1080
-}
-
-output "HDMI-A-1" {
-    scale 1
-    position x=1920 y=0
 }
