@@ -1,0 +1,25 @@
+environment {
+  // Java compatibility options
+  _JAVA_OPTIONS "-Dawt.useSystemAAFontSettings=on"
+  _JAVA_AWT_WM_NONREPARENTING "1"
+
+  ELECTRON_OZONE_PLATFORM_HINT "auto"
+
+  // Qt options
+  QT_QPA_PLATFORM "wayland"
+  QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+  QT_QPA_PLATFORMTHEME "qt6ct"
+
+  PROTON_ENABLE_WAYLAND "1"
+
+  EDITOR "micro"
+  VISUAL "micro"
+  TERMCMD "app2unit -T 'terminal-filechooser' --"
+
+  // App2unit
+  APP2UNIT_SLICES "a=app-graphical.slice b=background-graphical.slice s=session-graphical.slice"
+  TERMINAL "foot"
+
+  // OBSIDIAN
+  OBSIDIAN_USE_WAYLAND "1"
+}

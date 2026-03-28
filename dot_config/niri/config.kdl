@@ -1,7 +1,9 @@
 // Niri configuration for CachyOS
 // For documentation and full reference, see: https://github.com/YaLTeR/niri/wiki
 
+include "autostart.kdl"
 include "colors.kdl"
+include "environment.kdl"
 include "keybinds.kdl"
 include "looks.kdl"
 include "outputs.kdl"
