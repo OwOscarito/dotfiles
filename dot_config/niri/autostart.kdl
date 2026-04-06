@@ -1,2 +1,2 @@
-spawn-at-startup "qs" "-c" "noctalia-shell"
-spawn-at-startup "nsticky"
+spawn-at-startup "app2unit" "--" "qs" "-c" "noctalia-shell"
+spawn-at-startup "app2unit" "--" "nsticky"

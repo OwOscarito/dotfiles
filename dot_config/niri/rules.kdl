@@ -5,12 +5,20 @@ window-rule {
   draw-border-with-background false
   }
 
+// Full opacity clients
 window-rule {
   match app-id="kitty"
   match app-id="foot"
   match app-id="footclient"
   opacity 1.0
 }
+
+// floating
+window-rule {
+  match app-id="org.gnome.FileRoller"
+  baba-is-float true
+}
+
 
 window-rule {
   match title="^Picture-in-Picture$"
